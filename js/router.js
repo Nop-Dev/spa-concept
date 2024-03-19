@@ -1,4 +1,6 @@
 export class Router {
+    routes = {};
+
     add(routeName, page) {
         this.routes[routeName] = page;
     };
@@ -24,4 +26,4 @@ export class Router {
             document.querySelector('#app').innerHTML = html;
         });
     };
-}
+};
