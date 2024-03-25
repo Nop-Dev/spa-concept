@@ -18,8 +18,6 @@ export class Router {
         const { pathname } = window.location; // Distruptor - Desestruturar
         const route = this.routes[pathname] || this.routes[404];
     
-        console.log('oi')
-    
         fetch(route)
         .then(data => data.text())
         .then(html => {
